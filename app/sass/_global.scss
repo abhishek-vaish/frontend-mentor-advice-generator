@@ -23,6 +23,7 @@ body {
   background-color: map-get($map: $neutral-color, $key: "Dark Grayish Blue");
   border-radius: toRem(20);
   padding: toRem(46) toRem(48);
+  position: relative;
   .adviceId {
     text-transform: uppercase;
     font-size: small;
@@ -45,8 +46,9 @@ body {
       padding: toRem(18);
       cursor: pointer;
       @include flexbox;
-      position: fixed;
-      right: 48.3%;
+      position: absolute;
+      bottom: toRem(-30);
+      margin-left: toRem(-28);
       &:hover {
         box-shadow: toRem(5) toRem(1) toRem(30)
           map-get($map: $primary-color, $key: "Neon Green");
