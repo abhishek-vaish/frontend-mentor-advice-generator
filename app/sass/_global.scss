@@ -1,0 +1,56 @@
+@import "variable";
+@import "mixins";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  background-color: map-get($map: $neutral-color, $key: "Dark Blue");
+  height: 100vh;
+  @include flexbox;
+}
+
+.card {
+  @include flexbox;
+  flex-direction: column;
+  width: toRem(542);
+  height: toRem(328);
+  background-color: map-get($map: $neutral-color, $key: "Dark Grayish Blue");
+  border-radius: toRem(20);
+  padding: toRem(46) toRem(48);
+  .adviceId {
+    text-transform: uppercase;
+    font-size: small;
+    letter-spacing: toRem(4);
+    color: map-get($map: $primary-color, $key: "Neon Green");
+    margin-bottom: toRem(32);
+  }
+  .quote {
+    color: map-get($map: $primary-color, $key: "Light Cyan");
+    text-align: center;
+    font-size: $font-size;
+    margin-bottom: toRem(38);
+  }
+
+  div {
+    button {
+      background-color: map-get($map: $primary-color, $key: "Neon Green");
+      border: none;
+      border-radius: 50%;
+      padding: toRem(18);
+      cursor: pointer;
+      @include flexbox;
+      position: fixed;
+      right: 48.3%;
+      &:hover {
+        box-shadow: toRem(5) toRem(1) toRem(30)
+          map-get($map: $primary-color, $key: "Neon Green");
+      }
+    }
+  }
+}

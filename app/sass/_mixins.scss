@@ -1,0 +1,11 @@
+@mixin flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin breakpoint {
+  @media only screen and (max-width: 375px) {
+    @content;
+  }
+}
