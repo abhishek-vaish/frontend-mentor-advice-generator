@@ -1,0 +1,40 @@
+Folder PATH listing for volume New Volume
+Volume serial number is 0AE1-49A2
+D:.
+|   .gitignore
+|   gulpfile.js
+|   index.html
+|   package-lock.json
+|   package.json
+|   README-template.md
+|   README.md
+|   README.txt
+|   style-guide.md
+|   tree.txt
+|   
++---app
+|   +---js
+|   |       script.js
+|   |       
+|   \---sass
+|           style.scss
+|           _global.scss
+|           _mixins.scss
+|           _variable.scss
+|           
++---design
+|       active-states.jpg
+|       desktop-design.jpg
+|       desktop-preview.jpg
+|       mobile-design.jpg
+|       
++---dist
+|   \---css
+|           style.css
+|           
+\---images
+        favicon-32x32.png
+        icon-dice.svg
+        pattern-divider-desktop.svg
+        pattern-divider-mobile.svg
+        
